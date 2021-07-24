@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Header from "./common/header/Header"
 
 
 
 ReactDOM.render(
  
-<h1>OM</h1>,
+<Header/>,
 
   document.getElementById('root')
 );

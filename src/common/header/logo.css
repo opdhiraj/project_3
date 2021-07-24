@@ -1,0 +1,13 @@
+#logoimage{
+    height: 35px;
+    background-color:  #ff7f7f;
+    
+    animation: logorotation 8s linear  infinite ;
+
+}
+@keyframes logorotation {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
