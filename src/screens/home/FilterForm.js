@@ -1,34 +1,60 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import InputLabel from '@material-ui/core/InputLabel';
+import genres from "./../../common/genre";
 import Button from '@material-ui/core/Button';
 
+import TextField from '@material-ui/core/TextField';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme)=>({
   root: {
-    '& > *': {
-      margin: theme.spacing(1),
-      width: '25ch',
-    },
+    minWidth: 240,
+    height:350,
+  color:theme.palette.primary.light,
+  boxShadow:"10px 5px 5px grey",
+  margin:theme.spacing.unit,
   },
-}));
+  
+ }));
+
+
 
 export default function  FilterForm () {
     
- const classes = useStyles();
+  const classes = useStyles();
+ 
+
 
         return (
-          <form className={classes.root}  noValidate autoComplete="off">
-              <legend>Find Movie By</legend>
-            <TextField id="filled-basic" type="text" placeholder="Movie name" />
-            <TextField id="filled-basic" label="Genres"   />
-            <TextField id="filled-basic" label="Artist"  />
-            <TextField id="filled-basic" type="date"  placeholder="Release Date" />
-            <TextField id="outlined-basic" type="date" placeholder="Release Date End" />
-            <Button variant="contained" color="primary">Apply</Button>
-          </form>
-    
-    )
+
+          <Card className={classes.root} variant="outlined">
+           <h4>FIND MOVIES BY:</h4>
+           <form noValidate autoComplete="off">
+         
+           <FormControl >
+           <TextField id="standard-basic" label="Movie Name" />
+           <TextField id="standard-basic" label="Genres" />
+           <TextField id="standard-basic" label="Artist" />
+           <TextField id="standard-basic" type="date" />
+           <TextField id="standard-basic" type="date"/>
+          <Button variant="contained" color="primary"> Apply</Button>
+           </FormControl>
+                      
+                </form>
+
+
+
+      
+    </Card>
+  );
 }
+          
+    
+    
+
 
  

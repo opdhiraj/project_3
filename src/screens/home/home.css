@@ -5,7 +5,7 @@
     font-size: 1rem;
 }
 .flexcontainer{
-    width: 100%;
+    
     display: flex;
     margin: 16px;
 }
