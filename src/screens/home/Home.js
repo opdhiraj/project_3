@@ -4,13 +4,18 @@ import FilterForm from "./FilterForm";
 import "./home.css";
 import Releasedmovies from "./Releasedmovies";
 import Upcommingmovies from "./Upcommingmovies";
+// import {Route, Switch} from "react-router-dom"
+// import Details from "../details/Details";
 
 
 class Home extends React.Component{
     render(){
         return(
-            <div>
-                <Header/>
+            <>
+            
+           
+
+               <Header/>
                <div className="Upcomingmovies">
                     <span>Upcoming Movies</span>
                    < Upcommingmovies/>
@@ -24,9 +29,11 @@ class Home extends React.Component{
                 < FilterForm/> 
                  </div>
                  
-                </div> 
-        
-            </div>
+               </div>   
+       
+
+               </>
+            
         )
     }
 }

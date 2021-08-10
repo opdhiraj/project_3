@@ -1,0 +1,23 @@
+/* .mainContainer {
+  display: flex;
+
+} */
+
+.grid-container {
+  display: flex;
+  justify-items: center;
+}
+
+.middle {
+  padding-left: 2px;
+}
+
+.artistImage {
+  height: 100px;
+  width: 100px;
+}
+
+.button {
+  float: right;
+  padding-right: 500px;
+}

@@ -2,10 +2,10 @@ import React from 'react';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import InputLabel from '@material-ui/core/InputLabel';
-import genres from "./../../common/genre";
+// import Select from '@material-ui/core/Select';
+// import MenuItem from '@material-ui/core/MenuItem';
+// import InputLabel from '@material-ui/core/InputLabel';
+// import genres from "./../../common/genre";
 import Button from '@material-ui/core/Button';
 
 import TextField from '@material-ui/core/TextField';

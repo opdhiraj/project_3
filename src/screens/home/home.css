@@ -1,6 +1,6 @@
 .Upcomingmovies{
     background-color: #ff9999;
-    padding: 8px;
+    /* padding: 8px; */
     text-align: center;
     font-size: 1rem;
 }
@@ -13,10 +13,10 @@
 .left{
     width: 74%;
 }
-.left:hover{
+/* .left:hover{
     cursor: pointer;
 
-}
+} */
 
 .right{
     width: 26%;

@@ -2,13 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './screens/home/Home';
+import {BrowserRouter as Router } from "react-router-dom"
+import App from './App';
 
 
 
 ReactDOM.render(
- 
+ <Router>
 
-<Home/>,
+ 
+<App/>
+
+</Router>,
 
   document.getElementById('root')
 );

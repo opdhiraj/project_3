@@ -1,6 +1,6 @@
 
 
-let moviesData = [
+export let  moviesData = [
     {
         id: "M1",
         title: "The Yashfather",
@@ -258,4 +258,6 @@ let moviesData = [
     }
 ]
 
-export default moviesData;
+export function findMovieById(id){
+    return moviesData.find((movie)=>movie.id===id);
+}
